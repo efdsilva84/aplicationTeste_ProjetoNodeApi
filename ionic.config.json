@@ -1,0 +1,7 @@
+{
+  "name": "suple-comerce",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
