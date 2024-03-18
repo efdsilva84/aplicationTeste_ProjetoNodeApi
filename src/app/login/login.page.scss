@@ -1,0 +1,38 @@
+.cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: center;
+    ion-img{
+      width: 120px;
+      margin-top: 55%;
+    }
+    h6{
+      margin-top: 15%;
+      font-weight: bold;
+      color: var(--ion-color-primary);
+
+    }
+    p{
+      font-size: 12px;
+    }
+    ion-button{
+      width: 85%;
+      margin-top: 15%;
+
+    }
+ }
+  ion-list{
+    width: 100%;
+    ion-button{
+      margin: auto;
+    }
+  }
+  ion-loading.custom-loading {
+    --background: #e3edff;
+    --spinner-color: #1c6dff;
+
+    color: #1c6dff;
+  }

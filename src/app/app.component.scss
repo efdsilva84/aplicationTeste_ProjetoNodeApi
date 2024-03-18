@@ -2,25 +2,25 @@ ion-menu ion-content {
   --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
 
-ion-menu.md ion-content {
-  --padding-start: 8px;
-  --padding-end: 8px;
-  --padding-top: 20px;
-  --padding-bottom: 20px;
-}
+// ion-menu.md ion-content {
+//   --padding-start: 8px;
+//   --padding-end: 8px;
+//   --padding-top: 20px;
+//   --padding-bottom: 20px;
+// }
 
-ion-menu.md ion-list {
-  padding: 20px 0;
-}
+// ion-menu.md ion-list {
+//   padding: 20px 0;
+// }
 
-ion-menu.md ion-note {
-  margin-bottom: 30px;
-}
+// ion-menu.md ion-note {
+//   margin-bottom: 30px;
+// }
 
-ion-menu.md ion-list-header,
-ion-menu.md ion-note {
-  padding-left: 10px;
-}
+// ion-menu.md ion-list-header,
+// ion-menu.md ion-note {
+//   padding-left: 10px;
+// }
 
 ion-menu.md ion-list#inbox-list {
   border-bottom: 1px solid var(--ion-color-step-150, #d7d8da);
@@ -44,8 +44,8 @@ ion-menu.md ion-list#labels-list ion-list-header {
 }
 
 ion-menu.md ion-item {
-  --padding-start: 10px;
-  --padding-end: 10px;
+  // --padding-start: 10px;
+  // --padding-end: 10px;
   border-radius: 4px;
 }
 
@@ -97,15 +97,15 @@ ion-menu.ios ion-list#labels-list ion-list-header {
   margin-bottom: 8px;
 }
 
-ion-menu.ios ion-list-header,
-ion-menu.ios ion-note {
-  padding-left: 16px;
-  padding-right: 16px;
-}
+// ion-menu.ios ion-list-header,
+// ion-menu.ios ion-note {
+//   padding-left: 16px;
+//   padding-right: 16px;
+// }
 
-ion-menu.ios ion-note {
-  margin-bottom: 8px;
-}
+// ion-menu.ios ion-note {
+//   margin-bottom: 8px;
+// }
 
 ion-note {
   display: inline-block;
@@ -116,4 +116,20 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+ion-list-header{
+  background-image: linear-gradient(to right, #8e38d1 0%, #6c0cb5 0%, #6c0cb5 21%, #6c0cb5 52%, #6c0cb5 78%, #6c0cb5 100%);
+  margin-top: -.5rem;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  margin-bottom: 2rem;
+  ion-avatar{
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    border: 2px solid #fff;
+  }
+  ion-note{
+    color: #fff;
+  }
+
 }

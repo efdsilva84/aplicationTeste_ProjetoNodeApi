@@ -4,12 +4,28 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
+    path: 'folder',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'hipercaloricos',
+    loadChildren: () => import('./categorias/hipercaloricos/hipercaloricos.module').then( m => m.HipercaloricosPageModule)
+  },
+  {
+    path: 'proteicos',
+    loadChildren: () => import('./categorias/proteicos/proteicos.module').then( m => m.ProteicosPageModule)
+  },
+  {
+    path: 'antioxidantes',
+    loadChildren: () => import('./categorias/antioxidantes/antioxidantes.module').then( m => m.AntioxidantesPageModule)
   }
 ];
 

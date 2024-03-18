@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true">
+  <div class="cont">
+    <ion-card *ngFor="let item of frases" style="width: 100%">
+      <ion-card-title> {{item.author}} </ion-card-title>
+      <ion-card-subtitle> {{item.txt}} </ion-card-subtitle>
+    </ion-card>
+
+    <ion-list>
+      <ion-button
+        class="ion-text-center"
+        (click)="allfrases()"
+        size="large"
+        shape="round"
+        expand="block"
+        >Iniciar</ion-button
+      >
+      <form action="" [formGroup]="dadosFrase" (ngSubmit)="sendFrase()">
+        <ion-item>
+          <ion-input
+            formControlName="author"
+            label="Author"
+            labelPlacement="floating"
+            placeholder="Author"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+            formControlName="txt"
+            label="msg"
+            labelPlacement="floating"
+            placeholder="Mensagem"
+          ></ion-input>
+        </ion-item>
+
+        <ion-button type="submit">ENVIAR</ion-button>
+      </form>
+    </ion-list>
+  </div>
+</ion-content>
